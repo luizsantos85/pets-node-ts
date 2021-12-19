@@ -28,16 +28,24 @@ No seu terminal, rode os comandos abaixo:
 $ npm install -g nodemon typescript ts-node
 ```
 
-## Como instalar e baixar o projeto 👷
+## Como baixar e instalar o projeto 👷
 
 No seu terminal, rode os comandos abaixo:
 
 ```bash
 $ git clone https://github.com/luizsantos85/pets-node-ts
-$ cd pets-node-ts
-$ npm install
-$ npm run start-dev
+```
 
+```bash
+$ cd pets-node-ts
+```
+
+```bash
+$ npm install
+```
+
+```bash
+$ npm run start-dev
 ```
 
 ---
