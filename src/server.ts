@@ -19,7 +19,7 @@ server.use(mainRoutes);
 
 //not found
 server.use((req,res)=>{
-    res.status(404).send('Página não encontrada!');
+    res.status(404).render('pages/notfound');
 });
 
 server.listen(process.env.PORT);

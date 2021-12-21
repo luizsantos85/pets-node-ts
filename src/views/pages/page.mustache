@@ -1,7 +1,10 @@
 {{>partials/header}}
 
-<section class="banner" style="background-image: url('/assets/images/{{banner.bckg}}')">{{banner.title}}</section>
-<h2>{{banner.title}} disponíveis para adoção</h2>
+{{#banner}}
+    <section class="banner" style="background-image: url('/assets/images/{{banner.bckg}}')">{{banner.title}}</section>
+    <h2>{{banner.title}} disponíveis para adoção</h2>
+{{/banner}}
+
 
 <div class="container list">
     {{#list}}
@@ -12,9 +15,13 @@
             <div class="item--genre">Gênero: {{sex}}</div>
         </div>
     {{/list}}
-
-    
-
 </div>
+
+
+{{^list}}
+    <div class="container no-list">
+        <h2>Nenhum animal encontrado com esse nome!</h2>
+    </div>
+{{/list}}
 
 {{>partials/footer}}
